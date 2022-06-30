@@ -1,0 +1,139 @@
+*{
+    font-family: Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    background: #eceff1;
+    transition: 0.3s;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.bi{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.bi-moon{
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eceff1;
+    box-shadow: .5px .5px 10px .10px #000;
+    padding: 1rem 2rem;
+    position: relative;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin-top: 4rem;
+    display: flex;
+    width: 60%;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+.card-image {
+    padding: 2rem;
+    width: 50%;
+    position: relative;
+    background-color: #eff7fc;
+    overflow: visible;
+  }
+  .card-image span {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .card img {
+    width: 98%;
+    position: absolute;
+    right: 0.1rem;
+    top: 9rem;
+  }
+  .card-details {
+    width: 50%;
+    padding: 2rem;
+  }
+  .card-details h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .subtitle {
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .description {
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  .subscribe{
+    display: flex;
+    justify-content: space-between;
+  }
+  .subscribe-now {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .btn {
+    background-color: #444;
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 3rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+/* Dark Theme */
+
+.dark,
+.dark header {
+  background-color: #263238;
+  color: #fff;
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+.dark .bi-moon {
+  display: block;
+}
+
+.dark .card {
+  background-color: #37474f;
+}
+
+.dark .card-image {
+  background-color: #15191b;
+}
+
+.dark .subtitle {
+  color: #67b4f3;
+}
+
+.dark .description {
+  color: #e4e4e4;
+}
+
+.dark .btn {
+  width: 10rem;
+  background-color: #33be21;
+}
